@@ -18,7 +18,7 @@ players = {}
 
 #ROLL: rolls a n sided die with m sides
 @bot.command(name = 'roll', help = 'dice rolling simulation: "!roll (# of sides) (# of dice)"')
-async def roll(ctx, number_of_sides: typing.Optional[int] = 6, number_of_dice : typing.Optional[int] = 1):
+async def roll(ctx, number_of_sides: typing.Optional[int] = 6, number_of_dice: typing.Optional[int] = 1):
   dice = [str(random.choice(range(1, number_of_sides + 1))) for _ in range(number_of_dice)]
   await ctx.send(', '.join(dice))
 
