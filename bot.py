@@ -3,7 +3,6 @@ import os
 import random
 import typing
 import discord
-import youtube_dl
 
 from dotenv import load_dotenv
 from discord.ext import commands
